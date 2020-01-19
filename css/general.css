@@ -1,0 +1,184 @@
+/*general*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+@font-face { font-family: 'VNF-Bodoni'; src: url('webfont/VNF-Bodoni.eot') format('embedded-opentype'), url('webfont/VNF-Bodoni.woff') format('woff'), url('webfont/VNF-Bodoni.ttf') format('truetype'), url('webfont/VNF-Bodoni.svg') format('svg'); font-weight: normal; font-style: normal; }
+*{
+	font-family: 'roboto', sans-serif; 
+	font-size: 1em; font-weight: 300;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #313131;
+}
+a, a:hover{
+	text-decoration: none;
+}
+/*header*/
+.nav.container-fluid{
+	padding: 0; margin: 0;
+	top:0%;
+	background: white;
+	z-index: 100;
+	position: fixed;
+}
+.nav .container{
+	height: 5em;
+}
+.nav .container .row{
+	height: inherit; display: flex; 
+}
+#logo{
+	display: flex; 
+	align-items:  center;
+}
+#menu{
+	display: flex; 
+	justify-content: flex-end;
+}
+#menu ul{
+	margin: 0;
+	display: flex; 
+	justify-content: flex-end; align-items: center;
+}
+#menu li{
+	margin: 0; padding: 0;
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 1em;
+	color: #FC7A24;
+}
+#menu li:hover{
+	transition: 0.1s ease-in;
+	filter: opacity(0.4);
+	cursor: pointer;
+}
+strong, i{
+	color: inherit;
+}
+.bodoni{
+	font-family: "VNF-Bodoni","Times New Roman", "serif";
+}
+.bodoni>strong{
+	font-family: "Bodoni MT","Times New Roman", serif;
+	font-weight: 600;
+}
+.image-description{
+	margin-top: 1em;
+	font-family: "VNF-Bodoni", serif;
+	line-height: 0.8em;
+	font-size: 1em;
+}
+
+.col-md-10.col-xl-8.offset-xl-2.offset-md-1{
+	padding: 2em 0;
+	margin: 4em auto;
+	border-top: medium solid #FC7A24;
+	border-bottom: medium solid #FC7A24;
+}
+
+/*	Footer*/
+	footer{
+		margin-top: 10%; margin-bottom: 3%;	
+	}
+	footer .col-md-7, footer .col-md-5{
+		display: flex; flex-wrap: wrap;
+		flex-direction: row;  
+		justify-content: flex-end;
+		align-items: center;
+	}
+	footer p{
+		font-size: 0.8em;
+		margin: 0; padding: 0;
+		font-weight: 400;
+		flex: 1 1 auto;
+		color: #214670;
+	}
+	footer #footer-portfolio{
+		flex:4 1 100%;
+		color: #A8AAAB;
+		font-weight: 500;
+	}
+	footer #footer-loc{
+		color: #FC7A24;	
+	}
+	footer .col-md-5 .footer-icons{
+		width: 2.4em; height: 2.4em;
+		border-radius: 4em;
+		display: flex; justify-content: center; align-items: center;
+		padding: 0; margin-left: 1em;
+		cursor:pointer;
+	}
+	footer .col-md-5 .footer-icons i{
+		font-size: 1.4em;
+	}
+	footer .col-md-5 .footer-icons:first-child{
+		background: #626CFD;color: white;
+	}
+	footer .col-md-5 .footer-icons:nth-child(2){
+		background: #B645E0;color: white;
+	}
+	footer .col-md-5 .footer-icons:nth-child(3){
+		background: #F35CBE;color: white;
+	}
+	footer .col-md-5 .footer-icons:hover{
+		filter:brightness(0.7);
+		transition: 0.2s ease-in;
+	}
+/*model image-----------------------------------*/
+.img-fluid{
+	cursor: pointer;
+	background: none;
+}
+.img-fluid:hover{
+	transition: 0.2s ease-in;
+	filter: brightness(0.7);
+}
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 100; /* Sit on top */
+	/* Location of the box */
+	left: 0; bottom: 0;
+	top: 0; right:0;
+	width: 100vw; /* Full width */
+	height: 100vh; /* Full height */
+	overflow: visible; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	align-items: center; justify-content: center;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+	display: block; margin: 0 auto;
+	width:50%;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 1s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0.9)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close-but {
+	position: fixed;
+	display: flex;align-items: center; justify-content: center;
+	top: 1em;
+	right: 2em; 
+	width: 2em; height: 2em;
+	opacity: 1;
+	color: #FFFFFF; background: #FC7A24;
+	border-radius: 2em;
+	transition: 0.3s;
+	z-index: 101;
+}
+.close-but:hover{
+	color: #FC7A24;background: none;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+}

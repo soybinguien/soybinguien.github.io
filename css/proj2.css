@@ -1,0 +1,93 @@
+/* CSS Document */
+.nav.container-fluid{
+	background: #FC7A24;
+}
+#menu li{
+	color: white;
+}
+/*breadcrumbs*/
+nav .breadcrumb{
+	margin-top: 1.5em;
+	padding:0;
+}
+.breadcrumbs-container{
+	padding:0;
+	
+}
+nav .breadcrumb .breadcrumb-item i,nav .breadcrumb-item span{
+	color: #FC7A24;	
+
+}
+.breadcrumb .breadcrumb-item a{
+	font-weight: 700;
+	color: #FC7A24;	
+}
+/*header*/
+header.container-fluid{
+	padding: 0; margin:0;
+	position: relative;
+}
+header .heading{
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+header .cover{
+	background-image: url("../images/proj_cover.png");
+	background-size: cover; background-position: center;
+	height:70vh;
+	margin-bottom: 10vh;
+
+}
+header .cover img{
+	padding: 0; max-height:50vh;
+	margin-top: 3.5em;
+	object-fit: cover; object-position: center;
+}
+header .heading h1{
+	color: #FC7A24;
+	font-family: 'VNF-Bodoni', sans-serif;
+}
+.p2-info{
+	position: absolute;
+	right:0; bottom:0;
+	background: #313131;
+	z-index: 0;
+}
+.p2-info p{
+	margin: 0.5em;
+	color: white;
+}
+.p2-info strong{
+	font-weight: 700;
+}
+/*p3 image grid*/
+.p2{
+	position: relative;
+	margin-top:30vh;
+	background: #FC7A24;
+	bottom:0;
+}
+.p2 .container{
+	position: absolute;
+	left:0; right:0;
+	margin-top: -15vh;
+}
+.p2 .container img{
+	width: inherit;
+	object-fit:cover;
+	object-position:center;
+}
+#id-2{
+	width: 100%;
+	color: white; text-align: center;
+}
+#id-3{
+	width: 100%;
+	text-align: center;
+}
+.p5{
+	position: relative;
+	background-image:url("../images/proj2_p4_cover.png");
+	background-size:cover; background-position: center;
+	height: 50vh;	
+}

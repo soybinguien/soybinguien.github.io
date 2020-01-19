@@ -1,0 +1,90 @@
+/* CSS Document */
+
+@media (min-width: 768px){
+	header img{
+		width: 100%; 
+	}
+	#section_1 .row-image{
+		z-index: 1;
+		height: 100vh;
+		display: flex; align-items: center; justify-content: center;
+	}
+	#section_1{
+		height: 50vh;
+		display: flex; flex-direction: column;
+		justify-content: center;
+	}
+	#section_1 .col-md-12{
+		color: #FC7A24;
+		margin: 0;
+		font-family: "VNF-Bodoni",Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		font-size: 1.3em;
+	}
+	#section_1 strong{
+		color: #214670;
+	}
+/*	section 2*/
+	#section_2 .col-md-6{
+		position: relative;
+		background: none;
+	}
+	#section_2 .col-content{
+		position: absolute;
+		margin: 0; 
+		width:100%;
+		z-index: 1;
+/*		Tai cai thang z index nayyyy ._.*/
+		top: 0; bottom: 0; left: 0;
+		display: flex; flex-direction: column; align-items: center; justify-content: center;
+		opacity: 0;
+	}
+	#section_2 p{	
+		display: block;
+		font-family: "VNF-Bodoni",Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		font-size: 1.9em;
+		color: white;
+		text-align: center; width: 60%;
+	}
+	#section_2 button{
+		margin-top: 5%;
+		display: block;
+		width: 10em; height:4em;
+		background: none;
+		border: 2px solid #FC7A24;
+		color: #FC7A24; font-weight: 700;
+	}
+	#section_2 .col-img{
+		width: inherit;
+		z-index: -1;
+		object-fit: fill; object-position: center;
+		transition: all 0.1s ease-in;
+	}
+	.col-md-6{
+		background: blue;
+	}
+	#section_2 .col-content:hover{
+		transition: all 0.1s ease-in;
+		opacity: 1;
+	}
+	#section_2 .col-content:hover + .col-img,.col-img:hover{
+		transition: 0.2s ease-in;
+		filter: brightness(0.4);
+	}
+	#section_2 button:hover{
+		transition: 0.1s ease-in;
+		background: hsla(0,0%,100%,0.20);
+	}
+	#section_2 button:active{
+		background:#FC7A24; color: white;
+	}
+	#section_2 button:actived{
+		transition: 0.1s ease-in;
+		background: none;
+		color: #FC7A24; 
+	}
+	#section_2 button:focused{
+		transition: 0.1s ease-in;
+		background: none;
+		color: #FC7A24; 
+	}
+}

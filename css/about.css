@@ -1,0 +1,111 @@
+/* CSS Document */
+
+@media (min-width: 768px){
+	header.container-fluid {
+		padding: 0; margin: 0;
+		height:110vh;
+		background-image: url("../images/proj_cover.png");
+		background-size: cover; background-position: center;
+		position: relative;
+	}
+	header.container-fluid  img{
+		height: 100vh; width: 100vw;
+		object-fit: cover; object-position: center;
+		display: block; margin: 0;
+	}
+	header .container{
+		position:absolute;
+		margin: 0 auto;
+		top:50%; 
+	}
+	header .container p{
+		width: 4.8em;
+		display: block;
+		font-size: 2.6em;
+		color: white;
+		position: relative;
+		text-decoration: none;
+		overflow-x: hidden;
+	}
+	header .container p:after{
+		content: "";
+		position: absolute;
+		width: 0%;
+		height: 6px;
+		bottom:0; left:0;
+		background: white;
+		animation: longerr 1s ease-in-out 1 normal;
+		-webkit-animation: longerr 1s cubic-bezier(.56,.01,.16,.99) 0.5s 1 normal;
+	}
+	@keyframes longerr{
+		0% {left: 0; width: 0%;}
+		50% {width: 100%;}
+		100% {left: 100%;}
+	}
+	@-webkit-keyframes longerr{
+		0% {left: 0; width: 0%;}
+		50% {width: 100%;}
+		100% {left: 100%;}
+	}
+	
+	#section_1 strong{
+		color: inherit;
+	}
+/*	section 2*/
+	#section_2 .col-md-6{
+		position: relative;
+		background: none;
+	}
+	#section_2 .col-content{
+		position: absolute;
+		margin: 0; 
+		width:100%;
+		z-index: 1;
+/*		Tai cai thang z index nayyyy ._.*/
+		top: 0; bottom: 0; left: 0;
+		display: flex; flex-direction: column; align-items: center; justify-content: center;
+		opacity: 0;
+	}
+	#section_2 button{
+		margin-top: 5%;
+		display: block;
+		width: 10em; height:4em;
+		background: none;
+		border: 2px solid #FC7A24;
+		color: #FC7A24; font-weight: 700;
+	}
+	#section_2 .col-img{
+		width: inherit;
+		z-index: -1;
+		object-fit: fill; object-position: center;
+		transition: all 0.1s ease-in;
+	}
+	#section_2 .col-md-6 a{
+		text-decoration: none;
+	}
+	#section_2 .col-content:hover{
+		transition: all 0.1s ease-in;
+		opacity: 1;
+	}
+	#section_2 .col-content:hover + .col-img,.col-img:hover{
+		transition: 0.2s ease-in;
+		filter: brightness(0.4);
+	}
+	#section_2 button:hover{
+		transition: 0.1s ease-in;
+		background: hsla(0,0%,100%,0.20);
+	}
+	#section_2 button:active{
+		background:#FC7A24; color: white;
+	}
+	#section_2 button:actived{
+		transition: 0.1s ease-in;
+		background: none;
+		color: #FC7A24; 
+	}
+	#section_2 button:focused{
+		transition: 0.1s ease-in;
+		background: none;
+		color: #FC7A24; 
+	}
+}

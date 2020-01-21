@@ -32,7 +32,7 @@ header .heading{
 	margin-bottom: 2em;
 }
 header .cover{
-	background-image: url("../portfoliocuanguyen2020.github.io/images/proj_cover.png");
+	background-image: url("../images/proj_cover.png");
 	background-size: cover; background-position: center;
 	height:70vh;
 	margin-bottom: 10vh;
@@ -49,17 +49,19 @@ header .heading h1{
 .p2{
 	margin-top: 10vh;
 	position: relative;
-	background-image:url("../portfoliocuanguyen2020.github.io/images/proj1_p2_cover.png");
+	background-image:url("../images/proj1_p2_cover.png");
 	background-size:cover; background-position: center;
 	height: 70vh;	
 }
 .p2-info{
+	height: 20%; display: flex; align-items: center;
 	position: absolute;
 	right:0; bottom:0;
 	background: #313131;
 }
 .p2-info p{
-	margin: 0.5em;
+	
+	margin: 0.7em;
 	color: white;
 }
 .p2-info strong{
@@ -78,7 +80,6 @@ header .heading h1{
 	margin-top: -15vh;
 }
 .p3 .container img{
-	margin-top: 1em;
 	width: inherit;
 	object-fit:cover;
 	object-position:center;

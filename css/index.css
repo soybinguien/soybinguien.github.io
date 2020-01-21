@@ -59,8 +59,8 @@
 		object-fit: fill; object-position: center;
 		transition: all 0.1s ease-in;
 	}
-	.col-md-6{
-		background: blue;
+	#section_2 .col-md-6 a{
+		text-decoration: none;
 	}
 	#section_2 .col-content:hover{
 		transition: all 0.1s ease-in;

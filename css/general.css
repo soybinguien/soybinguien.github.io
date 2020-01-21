@@ -52,7 +52,19 @@ a, a:hover{
 	filter: opacity(0.4);
 	cursor: pointer;
 }
-strong, i{
+#menu a, #menu a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+#menu strong{
+	font-weight: 500;
+	color: inherit;
+}
+strong{
+	font-weight: 500;
+	color: inherit;
+}
+i{
 	color: inherit;
 }
 .bodoni{
@@ -63,9 +75,9 @@ strong, i{
 	font-weight: 600;
 }
 .image-description{
-	margin-top: 1em;
+	margin-top: 1.6em;
 	font-family: "VNF-Bodoni", serif;
-	line-height: 0.8em;
+	line-height: 0.9em;
 	font-size: 1em;
 }
 
@@ -74,6 +86,9 @@ strong, i{
 	margin: 4em auto;
 	border-top: medium solid #FC7A24;
 	border-bottom: medium solid #FC7A24;
+}
+.col-md-10.col-xl-8.offset-xl-2.offset-md-1 p{
+	margin: 0;
 }
 
 /*	Footer*/
@@ -103,13 +118,10 @@ strong, i{
 	}
 	footer .col-md-5 .footer-icons{
 		width: 2.4em; height: 2.4em;
-		border-radius: 4em;
+		border-radius: 5em;
 		display: flex; justify-content: center; align-items: center;
 		padding: 0; margin-left: 1em;
 		cursor:pointer;
-	}
-	footer .col-md-5 .footer-icons i{
-		font-size: 1.4em;
 	}
 	footer .col-md-5 .footer-icons:first-child{
 		background: #626CFD;color: white;
@@ -124,10 +136,21 @@ strong, i{
 		filter:brightness(0.7);
 		transition: 0.2s ease-in;
 	}
+	footer a, footer a:hover{
+		color: inherit;
+		margin: 0; padding: 0;
+	}
+	footer i{
+		margin: 0; padding: 0;
+		display: block;
+		font-size: 1em;
+		line-height: 0;
+	}
 /*model image-----------------------------------*/
 .img-fluid{
 	cursor: pointer;
 	background: none;
+	object-fit: cover; object-position: center;
 }
 .img-fluid:hover{
 	transition: 0.2s ease-in;
@@ -150,8 +173,8 @@ strong, i{
 
 /* Modal Content (Image) */
 .modal-content {
-	display: block; margin: 0 auto;
-	width:50%;
+	display: block; margin: 1em auto;
+	height: 100%; width: auto;
 }
 /* Add Animation - Zoom in the Modal */
 .modal-content {
